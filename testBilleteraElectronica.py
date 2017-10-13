@@ -4,7 +4,7 @@ Created on 13 oct. 2017
 @author: Rafael Cisneros
 '''
 from unittest import *
-from billeteraElectronica import *
+from BilleteraElectronica import *
 
 
 class TestBilleteraElectronica(unittest.TestCase):
@@ -21,8 +21,16 @@ class TestBilleteraElectronica(unittest.TestCase):
     def testBilletera(self):
         billetera = billeteraElectronica()
         assertEqual(billetera.saldo, 0,"La billetera deberia tener saldo 0")
-
-
+        
+    def testSaldo(self):
+        pass
+        
+    def testConsumir(self):
+        pass
+    
+    def testRecargar(self):
+        pass
+    
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
