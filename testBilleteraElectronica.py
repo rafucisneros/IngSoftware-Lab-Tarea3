@@ -1,8 +1,11 @@
+#/!usr/bin/env python
+# -*- coding: 850 -*-
 '''
 Created on 13 oct. 2017
 
 @author: Rafael Cisneros
 '''
+
 import unittest
 from ClassBilleteraElectronica import BilleteraElectronica
 from ClassCredito import Credito
@@ -10,9 +13,8 @@ from ClassDebito import Debito
 
 class TestBilleteraElectronica(unittest.TestCase):
 
-
     def setUp(self):
-        self.billetera = BilleteraElectronica()        
+        self.billetera = BilleteraElectronica(1,"Rafael","Cisneros",24759502,123)        
         
 
     def tearDown(self):
