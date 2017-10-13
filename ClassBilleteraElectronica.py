@@ -3,8 +3,8 @@ Created on 13 oct. 2017
 
 @author: Rafael Cisneros
 '''
-from Credito import *
-from Debito import *
+from ClassCredito import Credito
+from ClassDebito import Debito
 
 class BilleteraElectronica(object):
 

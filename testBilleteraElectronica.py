@@ -4,8 +4,9 @@ Created on 13 oct. 2017
 @author: Rafael Cisneros
 '''
 import unittest
-import BilleteraElectronica
-
+from ClassBilleteraElectronica import BilleteraElectronica
+from ClassCredito import Credito
+from ClassDebito import Debito
 
 class TestBilleteraElectronica(unittest.TestCase):
 
@@ -17,18 +18,18 @@ class TestBilleteraElectronica(unittest.TestCase):
     def tearDown(self):
         self.billetera = None
         
-
     def testBilletera(self):
         billetera = BilleteraElectronica()
         self.assertEqual(billetera.saldo, 0,"La billetera deberia tener saldo 0")
-        
-    def testSaldo(self):
-        pass
         
     def testConsumir(self):
         pass
     
     def testRecargar(self):
+        pass
+ 
+    def testSaldo(self):
+        self.assertEqual(self.billetera.saldo, 0,"La billetera deberia tener saldo 0")
         pass
     
 if __name__ == "__main__":
